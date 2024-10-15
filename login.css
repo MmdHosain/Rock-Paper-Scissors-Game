@@ -1,0 +1,62 @@
+*{
+    font-family: "Lucida Fax";}
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #384E77;
+}
+.main > *{
+    display: flex;
+    flex-direction: column;
+    padding: 20vw 10vw;
+    background-color: #8BBEB2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    justify-content: center;
+    align-content: center;
+}
+.label{
+    padding-right: 20px;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    font-weight: bolder;
+    font-size: 4vw;
+}
+
+.txt-area {
+    width: 100%;
+    padding: 2vw 2vw;
+
+    margin: 8px 0;
+    margin-bottom: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.txt-area:focus {
+    border-color: #8b9cee;
+    outline: none;
+}
+.button {
+    background-color: #1a4386; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6b8cc2;
+}

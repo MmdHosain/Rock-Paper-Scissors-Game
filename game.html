@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="main_screen">
+        <div id="scores">
+
+            <div id="left_score">
+                <p>score:</p>
+                <p> 0 </p>
+            </div>
+
+            <div id="right_score">
+                <p> 0 </p>
+                <p>:score</p>
+            </div>
+        </div>
+        <div id="game">
+            <div id="selected_dive_left">
+                <p>Selected</p>
+            </div>
+            <div class="left" id="left">
+                <img class="Rock" src="Rock.svg">
+                <img class="paper" src="paper.svg">
+                <img class="scissor" src="scissors.svg">
+            </div>
+            <div class="right" id="right">
+                <img class="scissor" src="scissors.svg">
+                <img class="paper" src="paper.svg">
+                <img class="Rock" src="Rock.svg">
+            </div>
+            <div id="selected_dive_right">
+                <p>Selected</p>
+            </div>
+        </div>
+        <div class="guide" id="guide">
+            <div id="count_down">
+
+            </div>
+            <div  class="starting_text">
+
+                <p id="starting_text">
+                    choose your key
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div id="controls">
+        <div class="controls-left">
+            <div class="div1">
+                <img class="black-sqr1" src="black-sqr.svg">
+                <img class="img1" src="key-q.svg">
+                <p>Rock</p>
+            </div>
+            <div class="div2">
+                <img class="black-sqr1" src="black-sqr.svg">
+                <img class="img2" src="key-a.svg">
+                <p>Paper</p>
+            </div>
+            <div class="div3">
+                <img class="black-sqr1" src="black-sqr.svg">
+                <img class="img3" src="key-z.svg">
+                <p>Scissors</p>
+            </div>
+        </div>
+        <div class="controls-right">
+            <div class="div1">
+                <p>Rock</p>
+                <img class="black-sqr2" src="black-sqr.svg">
+                <img class="img1" src="key-o.svg">
+
+            </div>
+            <div class="div2">
+                <p>Paper</p>
+
+                <img class="black-sqr3" src="black-sqr.svg">
+                <img class="img2" src="key-k.svg">
+            </div>
+            <div class="div3">
+                <p>Scissors</p>
+
+                <img class="black-sqr4" src="black-sqr.svg">
+                <img class="img3" src="key-m.svg">
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
