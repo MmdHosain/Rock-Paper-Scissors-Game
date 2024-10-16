@@ -1,7 +1,12 @@
+
 body{
     background-color: rgba(225, 189, 10, 0.64);
 }
+*{
+    font-family: "Segoe UI";
+}
 #main_screen{
+    padding: 15px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -10,7 +15,7 @@ body{
     /*background-color: #8BBEB2;*/
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 400px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -75%);
     border: 2px solid #0d0630;
@@ -18,17 +23,10 @@ body{
     /*justify-content: center;*/
     align-content: center;
     /*background-color: #6b8cc2;*/
-    background-color: #18314f; /* Darker background */
+    background-color: #2c6cb0; /* Darker background */
 }
 
 #scores{
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*border-bottom: 2px solid #0d0630;*/
-    /*justify-content: space-between;*/
-    /*padding: 3vw;*/
-    /*margin: 0;*/
-    /*color: #e6f9af;*/
 
 
     display: flex;
@@ -52,15 +50,22 @@ body{
     padding: 5px;
 }
 #game {
+    max-height: 230px;
     padding-right: 5px;
     padding-left: 5px;
     margin-top: 13%;
+
+    /*margin-top: 10px;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
 }
+.left, .right{
+    /*visibility: hidden;*/
+}
 .left > img,.right > img {
+    /*visibility: hidden;*/
     width: 100px;
     height: 100px;
     background-color: #8bbeb2; /* Light cyan background for images */
@@ -72,6 +77,42 @@ body{
 .right > img {
     transform: scaleX(-1);
 }
+#result_left{
+    display: none;
+    /*display: block;*/
+    height: 50px;
+    /*border: 2px solid yellow;*/
+}
+#result_left > img{
+
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: #8bbeb2; /* Light cyan background for images */
+    border-radius: 10px;
+    padding: 5px;
+    /*border: 2px solid #0d0630;*/
+}
+#result_right{
+    display: none;
+    /*display: block;*/
+    height: 50px;
+    /*border: 2px solid yellow;*/
+}
+
+#result_right > img{
+    /*margin-left: 50px;*/
+    margin-top: 50px;
+    margin-right: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: #8bbeb2; /* Light cyan background for images */
+    border-radius: 10px;
+    padding: 5px;
+    /*border: 2px solid #0d0630;*/
+}
+
 #controls{
     width: 800px;
     padding: 0;
@@ -81,7 +122,7 @@ body{
     justify-content: space-between;
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 800px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -75%);
     /*border: 2px solid #1a4386;*/
@@ -196,7 +237,7 @@ body{
 
 
 .starting_text{
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 0;
     margin-right: auto;
     margin-left: auto;
@@ -204,8 +245,8 @@ body{
     /*border: 2px solid yellow;*/
     align-content: center;
     visibility: visible;
-    background: #6d6d8d;
-    box-shadow: 0px 0px 50px 50px #6d6d8d;
+    background: #383881;
+    box-shadow: 0px 0px 28px 28px #383881;
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
     border-radius: 10px;
@@ -219,7 +260,7 @@ body{
     filter: drop-shadow(5px 10px 20px #0d0630);
 }
 #selected_dive_left{
-    visibility: hidden;
+    display: none;
     position: absolute;
     width: 350px;
     height: 120px;
@@ -231,9 +272,10 @@ body{
     align-content: center;
 }
 #selected_dive_right{
-    visibility: hidden;
+    display: none;
+
     position: absolute;
-    left: 444px;
+    left: 460px;
     width: 350px;
     height: 120px;
     background: rgba(206, 206, 252, 0.75);

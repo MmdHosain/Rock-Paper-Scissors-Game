@@ -8,18 +8,19 @@
 <body>
     <div id="main_screen">
         <div id="scores">
-
             <div id="left_score">
-                <p>score:</p>
-                <p> 0 </p>
+                <p>Score :</p>
+                <p id="left_score_num"> 0 </p>
             </div>
-
             <div id="right_score">
-                <p> 0 </p>
-                <p>:score</p>
+                <p id="right_score_num"> 0 </p>
+                <p>: Score</p>
             </div>
         </div>
         <div id="game">
+            <div id="result_left">
+                <img id="result_left_img" class="Rock" src="Rock.svg">
+            </div>
             <div id="selected_dive_left">
                 <p>Selected</p>
             </div>
@@ -27,6 +28,9 @@
                 <img class="Rock" src="Rock.svg">
                 <img class="paper" src="paper.svg">
                 <img class="scissor" src="scissors.svg">
+            </div>
+            <div id="result_right">
+                <img id="result_right_img" class="Rock" src="Rock.svg">
             </div>
             <div class="right" id="right">
                 <img class="scissor" src="scissors.svg">
@@ -39,14 +43,11 @@
         </div>
         <div class="guide" id="guide">
             <div id="count_down">
-
             </div>
-            <div  class="starting_text">
-
+            <div id="starting_text_div" class="starting_text">
                 <p id="starting_text">
-                    choose your key
+                    Choose your key
                 </p>
-
             </div>
         </div>
     </div>
@@ -73,7 +74,6 @@
                 <p>Rock</p>
                 <img class="black-sqr2" src="black-sqr.svg">
                 <img class="img1" src="key-o.svg">
-
             </div>
             <div class="div2">
                 <p>Paper</p>
@@ -83,7 +83,6 @@
             </div>
             <div class="div3">
                 <p>Scissors</p>
-
                 <img class="black-sqr4" src="black-sqr.svg">
                 <img class="img3" src="key-m.svg">
             </div>
